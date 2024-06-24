@@ -2,7 +2,6 @@
 
 A brief tour of geospatial analysis, mostly focused on open source software. 
 
-
 ## Organization
 [DSSG 2024](https://escience.washington.edu/using-data-science/data-science-for-social-good/dssg-projects/) has groups working in Python and R with a variety of geospatial data! Fortunately, there are a lot of great public tutorials, textbooks, and resources out there to introduce data scientists to geospatial data analysis.
 
@@ -19,7 +18,6 @@ Be sure to stop the Codespace when you're not using it from this page (https://g
 
 
 ## Start Here
-
 "Geospatial" data is simply data that can be located in space (usually the surface of the Earth) and time. You'll often hear people analyzing geospatial data talk about "Geographic Information System" (GIS), which is essentially software to manage and process a number of independent geospatial datasets.
 
 If you are new to geospatial analysis and like to start with history and theory I recommend this online course material from Penn State University (e.g. [maps](https://www.e-education.psu.edu/maps/l2_p2.html), [GIS](https://www.e-education.psu.edu/natureofgeoinfo/node/1672))
@@ -88,30 +86,28 @@ Unfortunately, there is no single 'Google Search' for geospatial data (...yet). 
 
 Major Cloud Providers host mirrored archives of public data from NASA, ESA, and other agencies, which have been converted to "cloud-optimized" formats. Google Earth Engine is a unique Cloud-computing platform focused on geospatial imagery analysis that is free for non-commercial use.
 
-## Skill 1. **Find and analyze imagery and GIS datasets with open-source software**
+## Skill 1 / Exercise: **Find and analyze imagery and GIS datasets with open-source software**
 
-**Exercise:** 
 > Take 20 minutes to find public geospatial data from one of the above and use QGIS or another tool to view it on a map!
-
 
 ## Concept 2. **Combining raster and vector data (reprojection, sampling, subsetting, interpolation)**
 
-More resources https://foundations.projectpythia.org/landing-page.html 
+* Review Understanding Map Projections lesson https://uwgda-jupyterbook.readthedocs.io/en/latest/modules/04_Vector1_Geopandas_CRS_Proj/04_Vector1_Tissot_MapDistortion_demo.html 
 
+* Microsoft Planetary Computer Examples (both R and Python): https://planetarycomputer.microsoft.com/docs/overview/about 
+    * https://github.com/microsoft/PlanetaryComputerExamples 
+    * Not sure what data is available in your area of interest? Start here! https://planetarycomputer.microsoft.com/explore
 
-## Skill 2. **Reproject data to have a common coordinate reference system for joint analysis**
+* Additional readingGeoscience-focused Python tutorials https://foundations.projectpythia.org/landing-page.html 
 
-Understanding Map Projections
+## Skill 2 / Exercise: **Reproject data to have a common coordinate reference system for joint analysis**
 
-* https://uwgda-jupyterbook.readthedocs.io/en/latest/modules/04_Vector1_Geopandas_CRS_Proj/04_Vector1_Tissot_MapDistortion_demo.html 
-
-Demo / Exercise, let's go over this notebook.
-* https://icesat-2-2022.hackweek.io/tutorials/geospatial/geospatial-intro.html# 
+> 60 minutes. Go over intro-geopandas.ipynb in this repository focused on vector data and the Microsoft Planetary Computer *quickstart* https://planetarycomputer.microsoft.com/docs/quickstarts/reading-stac/
 
 
 ## Concept 3. **Geostatistics**
 
-"Geostats" is the collection of methods for analyzing and predicting values and uncertainties associated with spatiotemporal phenomena. In other words, given measurements at *known* locations, how well can we predict unknown values at *different* locations? There are many methods.
+"Geostats" is the collection of methods for analyzing and predicting values and uncertainties associated with spatiotemporal phenomena. In other words, given measurements at *known* locations, how well can we predict unknown values at *different* locations? There are many methods! But a key thing to remember is that geospatial observations close in time and space tend to be more closely related (correlated) compared to measurements that are far apart. Geostatistical methods come up with sophisticated ways to deal with this. Below are two online comprehensive textbooks that have practical code examples.
 
 ### Python
 
@@ -121,11 +117,10 @@ Spatial Data Science for Social Geography https://github.com/martinfleis/sds
 Geocomputation with R, a book on geographic data analysis, visualization and modeling https://r.geocompx.org 
 
 
-## Skill 3. **Be able to visualize and share results of your analysis efficiently among your team**
+## Skill 3 / Exercise **Be able to visualize and share results of your analysis efficiently among your team**
 
 The easiest way to share a small amount of data is to put it on GitHub. [GitHub will render maps for you!](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/creating-diagrams)
 
-**Exercise** 
 > Use https://geojson.io to create a GeoJSON file, put it in a GitHub repository, and share a link with your colleague!
 
 ## Additional Resources
