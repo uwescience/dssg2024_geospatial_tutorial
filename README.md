@@ -151,7 +151,9 @@ The easiest way to share a small amount of data is to put it on GitHub. [GitHub 
     https://github.com/opengeos/python-geospatial
     https://leafmap.org 
 
-* 2023 workshop on Geopandas https://github.com/martinfleis/efficient-geopandas-workshop 
+* Recent Geopandas workshops
+  * 2023: https://github.com/martinfleis/efficient-geopandas-workshop
+  * 2024: https://github.com/martinfleis/geopandas-one-workshop
 
 * The social science data lab at UC Berkeley https://github.com/dlab-berkeley 
 
